@@ -1,11 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { normalizeCharacter } from '../services/futuramaApi';
 
 function Quote({ quote, character, image }) {
+  const normalCharName = normalizeCharacter(character);
   return (
     <li>
       <img src={image} alt={`image of ${character}`} />
-      <h3>{character}</h3>
+      <h3>{normalCharName}</h3>
       <p>{quote}</p>
     </li>
   );
