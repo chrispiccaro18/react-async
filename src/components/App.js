@@ -1,12 +1,9 @@
 import React from 'react';
-// import TopQuotes from '../containers/TopQuotes';
-import Quotes from './Quotes';
-import dummyData from '../../data/quotes';
+import TopQuotes from '../containers/TopQuotes';
 import '../main.css';
 
 export default function App() {
   return (
-    // <TopQuotes />
-    <Quotes quotes={dummyData} />
+    <TopQuotes />
   );
 }
