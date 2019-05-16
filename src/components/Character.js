@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Characters({ name, status, species, image }) {
+function Character({ name, status, species, image }) {
   return (
     <li>
       <img src={image} alt={`image of ${name}`} />
@@ -11,9 +11,11 @@ function Characters({ name, status, species, image }) {
   );
 }
 
-Characters.propTypes = {
+Character.propTypes = {
   name: PropTypes.string.isRequired,
   status: PropTypes.string.isRequired,
   species: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 };
+
+export default Character;
