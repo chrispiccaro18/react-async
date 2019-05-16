@@ -4,7 +4,7 @@ import Quote from './Quote';
 
 function Quotes({ quotes }) {
   const quoteLis = quotes.map(quoteObj => {
-    const { quote, character, image } = quote;
+    const { quote, character, image } = quoteObj;
     return <Quote key={`${quote}${character}${image}`} quote={quote} character={character} image={image} />;
   });
 
