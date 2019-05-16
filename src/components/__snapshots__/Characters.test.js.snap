@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Characters comp tests creates a Characters comp 1`] = `
+<ul>
+  <Character
+    image="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    key="{\\"name\\":\\"Rick Sanchez\\",\\"status\\":\\"Alive\\",\\"species\\":\\"Human\\",\\"image\\":\\"https://rickandmortyapi.com/api/character/avatar/1.jpeg\\"}"
+    name="Rick Sanchez"
+    species="Human"
+    status="Alive"
+  />
+  <Character
+    image="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    key="{\\"name\\":\\"Rick Sanchez\\",\\"status\\":\\"Dead\\",\\"species\\":\\"Human\\",\\"image\\":\\"https://rickandmortyapi.com/api/character/avatar/1.jpeg\\"}"
+    name="Rick Sanchez"
+    species="Human"
+    status="Dead"
+  />
+  <Character
+    image="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+    key="{\\"name\\":\\"Rick Sanchez\\",\\"status\\":\\"Alive\\",\\"species\\":\\"Alien\\",\\"image\\":\\"https://rickandmortyapi.com/api/character/avatar/1.jpeg\\"}"
+    name="Rick Sanchez"
+    species="Alien"
+    status="Alive"
+  />
+</ul>
+`;
