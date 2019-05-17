@@ -5,6 +5,9 @@ export function getCharacters(page = 1) {
     .then(res => ([res.ok, res.json()]))
     .then(([ok, body]) => {
       if(!ok) throw 'Unable to fetch characters';
-      return body.results;
+      return {
+        characters: body.results,
+        totalPages: body.info.count / body.info.pages
+      };
     });
 }
