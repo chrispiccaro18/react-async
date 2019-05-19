@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 function PagingButtons({ handleNextButton, handlePrevButton, currentPage, totalPages }) {
   return (
     <>
-      <button onClick={handlePrevButton}>Previous</button>
+      <button onClick={handlePrevButton} disabled={currentPage <= 1}>Previous</button>
       <span>{`${currentPage}/${totalPages}`}</span>
-      <button onClick={handleNextButton}>Next</button>
+      <button onClick={handleNextButton} disabled={currentPage >= totalPages}>Next</button>
     </>
   );
 }
