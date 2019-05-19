@@ -49,6 +49,7 @@ export default class AllCharacters extends PureComponent {
   render() {
     const { characters, totalPages, currentPage } = this.state;
     const { handleNextButton, handlePrevButton } = this;
+    
     const pagingButtonsProps = { handleNextButton, handlePrevButton, currentPage, totalPages };
     return (
       <>

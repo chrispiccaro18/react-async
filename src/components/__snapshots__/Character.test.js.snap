@@ -10,7 +10,10 @@ exports[`Character comp tests creates a Character comp 1`] = `
     Rick Sanchez
   </h3>
   <p>
-    Species: Human, Status: Alive
+    Species: Human
+  </p>
+  <p>
+    Status: Alive
   </p>
 </li>
 `;
