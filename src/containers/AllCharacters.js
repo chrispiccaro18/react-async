@@ -10,20 +10,23 @@ export default class AllCharacters extends PureComponent {
     currentPage: 1
   }
 
+  fetchCharacters = () => {
+    getCharacters(this.state.currentPage)
+      .then(res => {
+        return this.setState({
+          characters: res.results,
+          totalPages: Math.ceil(res.info.count / res.info.pages)
+        });
+      });
+  }
+
   componentDidMount() {
-    console.log('mounted');
-    // getCharacters(this.state.page)
-    //   .then(res => {
-    //     return this.setState({
-    //       characters: res.results,
-    //       totalPages: Math.ceil(res.info.count / res.info.pages)
-    //     });
-    //   });
+    this.fetchCharacters();
   }
 
   componentDidUpdate(prevProps, prevState) {
     if(this.state.currentPage !== prevState.currentPage) {
-      console.log('we need to update');
+      this.fetchCharacters();
     }
   }
 
