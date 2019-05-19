@@ -7,7 +7,7 @@ export default class AllCharacters extends PureComponent {
   state = {
     characters: [],
     totalPages: null,
-    page: 1
+    currentPage: 1
   }
 
   componentDidMount() {
@@ -18,8 +18,13 @@ export default class AllCharacters extends PureComponent {
   }
 
   render() {
-    const { characters } = this.state;
-    return <Characters characters={characters} />;
+    const { characters, totalPages, currentPage } = this.state;
+    return (
+      <>
+        <h1>{`Total Pages: ${totalPages}, Current Page: ${currentPage}`}</h1>
+        <Characters characters={characters} />
+      </>
+    );
   }
 }
 
