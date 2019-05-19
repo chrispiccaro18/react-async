@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Characters from '../components/Characters';
+import PagingButtons from '../components/PagingButtons';
 import { getCharacters } from '../services/rickAndMortyApi';
 
 export default class AllCharacters extends PureComponent {
@@ -10,13 +11,22 @@ export default class AllCharacters extends PureComponent {
   }
 
   componentDidMount() {
-    getCharacters(this.state.page)
-      .then(res => {
-        return this.setState({
-          characters: res.results,
-          totalPages: Math.ceil(res.info.count / res.info.pages)
-        });
-      });
+    console.log('mounted');
+    // getCharacters(this.state.page)
+    //   .then(res => {
+    //     return this.setState({
+    //       characters: res.results,
+    //       totalPages: Math.ceil(res.info.count / res.info.pages)
+    //     });
+    //   });
+  }
+
+  handleNextButton = () => {
+    this.setState(state => {
+      return {
+        currentPage: state.currentPage + 1
+      };
+    });
   }
 
   render() {
@@ -25,6 +35,7 @@ export default class AllCharacters extends PureComponent {
       <>
         <h1>Rick and Morty Characters</h1>
         <h2>{`Total Pages: ${totalPages}, Current Page: ${currentPage}`}</h2>
+        <PagingButtons handleNextButton={this.handleNextButton} />
         <Characters characters={characters} />
       </>
     );
