@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Characters comp tests creates a Characters comp 1`] = `
-<ul>
+<ul
+  className="char"
+>
   <Character
     image="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
     key="{\\"name\\":\\"Rick Sanchez\\",\\"status\\":\\"Alive\\",\\"species\\":\\"Human\\",\\"image\\":\\"https://rickandmortyapi.com/api/character/avatar/1.jpeg\\"}"
