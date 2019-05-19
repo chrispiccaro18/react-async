@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import Characters from '../components/Characters';
 import { getCharacters } from '../services/rickAndMortyApi';
-import { characters, totalPages } from '../../data/characters';
 
 export default class AllCharacters extends PureComponent {
   state = {
@@ -11,10 +10,13 @@ export default class AllCharacters extends PureComponent {
   }
 
   componentDidMount() {
-    this.setState({
-      characters,
-      totalPages
-    });
+    getCharacters(this.state.page)
+      .then(res => {
+        return this.setState({
+          characters: res.results,
+          totalPages: Math.ceil(res.info.count / res.info.pages)
+        });
+      });
   }
 
   render() {
@@ -27,16 +29,4 @@ export default class AllCharacters extends PureComponent {
       </>
     );
   }
-}
-
-// eslint-disable-next-line no-unused-vars
-function forLater() {
-  getCharacters(this.state.page)
-    .then(res => {
-      const { characters, totalPages } = res;
-      return this.setState({
-        characters,
-        totalPages
-      });
-    });
 }
