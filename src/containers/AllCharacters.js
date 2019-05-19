@@ -6,7 +6,7 @@ import { getCharacters } from '../services/rickAndMortyApi';
 export default class AllCharacters extends PureComponent {
   state = {
     characters: [],
-    totalPages: null,
+    totalPages: 20,
     currentPage: 1
   }
 
@@ -28,14 +28,24 @@ export default class AllCharacters extends PureComponent {
       };
     });
   }
+  
+  handlePrevButton = () => {
+    this.setState(state => {
+      return {
+        currentPage: state.currentPage - 1
+      };
+    });
+  }
 
   render() {
     const { characters, totalPages, currentPage } = this.state;
+    const { handleNextButton, handlePrevButton } = this;
+    const pagingButtonsProps = { handleNextButton, handlePrevButton, currentPage, totalPages };
     return (
       <>
         <h1>Rick and Morty Characters</h1>
         <h2>{`Total Pages: ${totalPages}, Current Page: ${currentPage}`}</h2>
-        <PagingButtons handleNextButton={this.handleNextButton} />
+        <PagingButtons {...pagingButtonsProps} />
         <Characters characters={characters} />
       </>
     );
