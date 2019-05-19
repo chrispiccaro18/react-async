@@ -21,6 +21,12 @@ export default class AllCharacters extends PureComponent {
     //   });
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if(this.state.currentPage !== prevState.currentPage) {
+      console.log('we need to update');
+    }
+  }
+
   handleNextButton = () => {
     this.setState(state => {
       return {
