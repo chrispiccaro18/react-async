@@ -6,7 +6,8 @@ function Character({ name, status, species, image }) {
     <li>
       <img src={image} alt={`image of ${name}`} />
       <h3>{name}</h3>
-      <p>{`Species: ${species}, Status: ${status}`}</p>
+      <p>{`Species: ${species}`}</p>
+      <p>{`Status: ${status}`}</p>
     </li>
   );
 }

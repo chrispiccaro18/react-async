@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import Characters from '../components/Characters';
 import { getCharacters } from '../services/rickAndMortyApi';
+import style from '../main.css';
 import { characters, totalPages } from '../../data/characters';
 
 export default class AllCharacters extends PureComponent {
@@ -21,7 +22,7 @@ export default class AllCharacters extends PureComponent {
     const { characters, totalPages, currentPage } = this.state;
     return (
       <>
-        <h1>{`Total Pages: ${totalPages}, Current Page: ${currentPage}`}</h1>
+        <h1 className={style['page']}>{`Total Pages: ${totalPages}, Current Page: ${currentPage}`}</h1>
         <Characters characters={characters} />
       </>
     );
