@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PagingButtons comp tests creates a PagingButtons comp 1`] = `
+<Fragment>
+  <button
+    disabled={true}
+    onClick={[MockFunction]}
+  >
+    Previous
+  </button>
+  <span>
+    1/20
+  </span>
+  <button
+    disabled={false}
+    onClick={[MockFunction]}
+  >
+    Next
+  </button>
+</Fragment>
+`;

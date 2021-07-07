@@ -1,0 +1,33 @@
+* {
+  background-color: #70b050;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+
+.char {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  li {
+    background-color: #6c9c3f;
+    border: 1px solid black;
+    margin-right: 1em;
+    margin-bottom: 1em;
+
+    h3 {
+      background-color: #6c9c3f;
+      margin: 0;
+      text-align: center;
+    }
+
+    p {
+      background-color: #6c9c3f;
+      margin-left: 0.3em;
+    }
+  }
+}
