@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character comp tests creates a Character comp 1`] = `
+<li>
+  <img
+    alt="image of Rick Sanchez"
+    src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+  />
+  <h3>
+    Rick Sanchez
+  </h3>
+  <p>
+    Species: Human
+  </p>
+  <p>
+    Status: Alive
+  </p>
+</li>
+`;
