@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quotes component renders Quotes component 1`] = `
+<ul>
+  <Quote
+    character="Bender"
+    image="https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+    key="Problem solved. You two fight to the death and I'll cook the loser.Benderhttps://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+    quote="Problem solved. You two fight to the death and I'll cook the loser."
+  />
+  <Quote
+    character="Bender"
+    image="https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+    key="Bite my shiny metal ass.Benderhttps://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+    quote="Bite my shiny metal ass."
+  />
+  <Quote
+    character="Professor-farnsworth"
+    image="https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554904014/farnsworth.png"
+    key="I'm sure Bender has just made some cunning remark, but he doesn't know I taped
+over his soap operas to record this message.Professor-farnsworthhttps://res.cloudinary.com/dzxqhkyqd/image/upload/v1554904014/farnsworth.png"
+    quote="I'm sure Bender has just made some cunning remark, but he doesn't know I taped
+over his soap operas to record this message."
+  />
+  <Quote
+    character="Bender"
+    image="https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+    key="You're a thousand years old?! Your bio says you're 27!Benderhttps://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+    quote="You're a thousand years old?! Your bio says you're 27!"
+  />
+  <Quote
+    character="Zapp-brannigan"
+    image="https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554904049/Zapp_Brannigan.png"
+    key="You'll be negotiating with the mysterious brain-balls. They've got a lot of
+brains and a lot of... chutzpah.Zapp-branniganhttps://res.cloudinary.com/dzxqhkyqd/image/upload/v1554904049/Zapp_Brannigan.png"
+    quote="You'll be negotiating with the mysterious brain-balls. They've got a lot of
+brains and a lot of... chutzpah."
+  />
+</ul>
+`;

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quote component renders Quote component 1`] = `
+<li>
+  <img
+    alt="image of Bender"
+    src="https://res.cloudinary.com/dzxqhkyqd/image/fetch/c_scale,w_500/https://res.cloudinary.com/dzxqhkyqd/image/upload/v1552429540/bender.png"
+  />
+  <h3>
+    Bender
+  </h3>
+  <p>
+    Problem solved. You two fight to the death and I'll cook the loser.
+  </p>
+</li>
+`;
